@@ -8,6 +8,9 @@ body {
   background-color: #d63031;
   border-color: #d63031;
 }
+.btn-info.focus, .btn-info:focus {
+    box-shadow: 0 0 0 0.2rem rgba(214,48,49,.5);
+}
 .progress-bar {
   background-color: #e17055;
 }
@@ -26,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 4rem;
 }
 
-/*Result oage styles*/
+/*Result page styles*/
 #result-page h6 {
   display: block;
 }
