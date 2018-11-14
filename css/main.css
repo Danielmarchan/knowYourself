@@ -43,6 +43,9 @@ h1, h2, h3, h4, h5, h6 {
 #result-page button, #result-page a {
   margin: 10px 0;
 }
+#result-page p {
+  white-space: pre-wrap;
+}
 
 /*Radio Button Style by Wilder Taype https://codepen.io/wilder_taype/pen/pNXwMW*/
 @keyframes click-wave {
