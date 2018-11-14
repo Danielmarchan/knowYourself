@@ -1,5 +1,19 @@
-#question-page, #results {
+#question-page, #result-page {
     display: none;
+}
+
+#result-page h6 {
+  display: block;
+}
+#result-page ul {
+  padding: 0;
+}
+#result-page li {
+  list-style: none;
+  padding: 20px 0;
+}
+#result-page button, #result-page a {
+  margin: 10px 0;
 }
 
 /*Radio Button Style by Wilder Taype https://codepen.io/wilder_taype/pen/pNXwMW*/
