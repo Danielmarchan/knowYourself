@@ -1,15 +1,15 @@
 /*
 Index:
-    1. Data
-        a. Questions
-        b. Personality traits
-        c. Personality types
-    2. Variables
-        a. HTML Elements
-        b. Others
-    3. Functions
-        a. Main functions
-        b. Helper functions
+    1. Data [line 15]
+        a. Questions [line 16]
+        b. Personality traits [line 52]
+        c. Personality types [line 56]
+    2. Variables [line 155]
+        a. HTML Elements [line 156]
+        b. Others [line 173]
+    3. Functions [line 178]
+        a. Main functions [line 179]
+        b. Helper functions [line 238]
 */
 
 //1. Data
@@ -207,7 +207,6 @@ Index:
                 //If next question is last, chenge button text
                 if (index == 3) {
                     event.target.textContent = "Complete test";
-
                 }
                 //If current question is last, complete test
                 else if (index == 4) {
@@ -245,7 +244,7 @@ Index:
             elementTextAnswer0.textContent = questionObj.possibleAnswers[0];
             elementTextAnswer1.textContent = questionObj.possibleAnswers[1];
             elementProgress.style.width = progressPercentage + "%";
-            progressPercentage += 25;
+            progressPercentage += 30;
         }
         
          //Determine correct answer

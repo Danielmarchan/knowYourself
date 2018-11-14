@@ -1,7 +1,32 @@
+/*General styles*/
+body {
+  background-color: #f7f1de;
+  color: #2d3436;
+  font-family: 'Open Sans', sans-serif;
+}
+.btn-info, .btn-info:hover {
+  background-color: #d63031;
+  border-color: #d63031;
+}
+.progress-bar {
+  background-color: #e17055;
+}
 #question-page, #result-page {
     display: none;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
 
+/*Start styles*/
+#logo {
+  color: #e74c3c;
+  font-weight: 400;
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 4rem;
+}
+
+/*Result oage styles*/
 #result-page h6 {
   display: block;
 }
@@ -61,7 +86,7 @@
   background: #9faab7;
 }
 .option-input:checked {
-  background: #40e0d0;
+  background: #e17055;
 }
 .option-input:checked::before {
   height: 30px;
@@ -76,7 +101,7 @@
   -webkit-animation: click-wave 0.65s;
   -moz-animation: click-wave 0.65s;
   animation: click-wave 0.65s;
-  background: #40e0d0;
+  background: #e17055;
   content: '';
   display: block;
   position: relative;
