@@ -201,19 +201,22 @@ Index:
                 elementRadioAnswer0.checked = false;
                 elementRadioAnswer1.checked = false;
                 
-                //Next question
+                //Iterate to next question
                 index++;
                 
                 //If next question is last, chenge button text
                 if (index == 3) {
                     event.target.textContent = "Complete test";
                 }
+                
                 //If current question is last, complete test
-                else if (index == 4) {
+                if (index == 4) {
                     completeTest(personalityTypes[personalityResult]);
                 }
-                
-                displayQuestion(questions[index]);    
+                //Else display next question
+                else {
+                    displayQuestion(questions[index]);      
+                }
             }
         }
         
@@ -229,15 +232,22 @@ Index:
             elementResultImage.src = personObj.image;
             elementResultImage.alt = personObj.name + " image";
             elementResultDescription.textContent = personObj.description;
-            elementLearnMoreButton.setAttribute("href", personObj.learnMore); 
+            elementLearnMoreButton.setAttribute("href", personObj.learnMore);
+            
+            //Scroll to top
+            window.scrollTo(0, 0);
         
             //Display result page
             document.getElementById("result-page").style.display = "block";
         }
     
     //b. Helper functions
-        //Append question info
+        //Append question data
         function displayQuestion(questionObj) {
+            //Scroll to top
+            window.scrollTo(0, 0);
+            
+            //Append data
             elementQuestionNumber.textContent = questionObj.title;
             elementQuestion.textContent = questionObj.question;
             elementQuestion.className = "my-5";

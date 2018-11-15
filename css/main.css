@@ -85,7 +85,6 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   margin-right: 0.5rem;
   outline: none;
-  position: relative;
   z-index: 1000;
 }
 .option-input:hover {
@@ -122,4 +121,11 @@ h1, h2, h3, h4, h5, h6 {
 body label {
   display: block;
   line-height: 40px;
+}
+
+/*Media querys*/
+@media (max-width: 500px) {
+  #logo {
+    font-size: 3rem;
+  }
 }
